@@ -6,16 +6,17 @@
     We have identified the competence of different members and have divided the roles accordingly. Team members are free to share their knowledge and experience that they have with the team for maximum efficiency. Our team members are well aware of the Wow(way of working) this would be essential for carrying out scrum meetings and following agile methodologies.
 
 3. How do we ensure knowledge transfer among our team members?
-    We will follow a Kanban board to track progress 
-    We will add a channel for team members. If someone has a question about which part of the project, leave the questions here, these questions will be answered by other members.
+    We will divide the project into sprints and follow a Kanban board to track progress increasing tracability. Kanban Board will contain task cards where team members will be assigned to tasks this would allow team members to check and visualise an ovierview of the prject. For every sprint, Sprint planning and sprint retrosepectives will be held to reflect and plan for current and future sprints.
+    
 
 4. What is our usual communication plan?
     We will using the discord as our main communication tool
     besides that Zoom meetings is the mainly meeting and discuss tool
     and if necessary we will have campus meeting
-    We will have agile meeting once a week at least
-    and we will also have a flexible meeting which is not necessary to join
+    We will have weekly scrum meetings mandatory for all team members
+    Flexible and codealong sessions will be held throughout sprints.
+    
     
 5. How will we solve conflicts?
     We will create branches for different parts of the development, and remind the team in time after the code is merged to ensure that everyone updates the local code in time.
-    For inevitable conflicts in our team program, when conflict has arisen. The team members will communicate and discuss how to solve the problem, we will find the most suitable solution for us, otherwise, We ask the TA for help.
+    For inevitable conflicts in our team program, when conflict has arisen. The team members will communicate and discuss how to solve the problem, we will find the most suitable solution for us, otherwise, we will seek assistance from the TA.
