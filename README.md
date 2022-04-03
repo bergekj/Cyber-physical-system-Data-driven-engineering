@@ -1,5 +1,5 @@
 # 2022-group-14
-Group membesrs:
+Group members:
  
 Najeb Albakar
 Jakob Bergek
@@ -12,7 +12,7 @@ Let people know what your project can do specifically. Provide context and add a
 
 ## Getting started
 
-Rrerequisites(with recomanded version):
+Rrerequisites(with recommended version):
 
 Linux system(Ubuntu the minimum version 18.04)
 Docker(version 20.10.14)
@@ -97,7 +97,7 @@ You can also document commands to lint the code or run tests. These steps help t
 Show your appreciation to those who have contributed to the project.
 
 ## License
-Check out: [LICENSE](doc/LICENSE)
+Check out: [LICENSE](/LICENSE)
 
 ## Project status
 Developing with 100% erengy.
