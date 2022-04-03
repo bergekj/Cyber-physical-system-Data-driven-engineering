@@ -97,7 +97,7 @@ You can also document commands to lint the code or run tests. These steps help t
 Show your appreciation to those who have contributed to the project.
 
 ## License
-For open source projects, say how it is licensed.
+Check out: LICENSE
 
 ## Project status
 Developing with 100% erengy.
