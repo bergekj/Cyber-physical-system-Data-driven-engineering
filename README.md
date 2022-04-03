@@ -97,7 +97,7 @@ You can also document commands to lint the code or run tests. These steps help t
 Show your appreciation to those who have contributed to the project.
 
 ## License
-Check out: LICENSE
+Check out: [LICENSE](doc/LICENSE)
 
 ## Project status
 Developing with 100% erengy.
