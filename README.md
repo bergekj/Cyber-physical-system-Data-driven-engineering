@@ -56,7 +56,14 @@ Use the built-in continuous integration in GitLab.
 
 ***
 ## Features
-THis will display the updated Features
+For feature development we would want to follow the 3 steps described in the following:
+
+a)	Requirements engineering - Teamwork is the most basic requirement when creating a new feature. This is because new questions arise during development and because requirements change throughout the process of development. We plan to have sprint retrospectives with stakeholders to stay in sync with the requirements they have agreed upon and if there are new requirements, we ask the user are they satisfied. 
+
+b)	Proof of concept - With a prototype or minimum viable product (MVP), we can put our preliminary research into practice and see whether your ideas work in real life. We check if we have met DoD as per stakeholders 
+
+c)	Production – We rollout our software in the production/master branch and monitor results if we notice unexpected bugs or any disruption in CI.
+
 
 ## Stratages for Unexpected exceptions
 To avoid:
