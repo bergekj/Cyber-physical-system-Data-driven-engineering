@@ -34,18 +34,17 @@ stages:
 
 # Display information before we start the build.
 before_script:
-    - docker info
-    - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN $CI_REGISTRY
 
 # This section describes what shall be done to build and test the project.
 build-and-test:
-  image: alpine:latest
-  tags:
-    - docker-build
-  stage: build
+  image: docker:latest
+  stage: publish
+  services:
+    - docker:dind
   script:
     - docker build -t $TAG_COMMIT -t $TAG_LATEST .
-     - docker push $TAG_COMMIT
+    - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN $CI_REGISTRY
+    - docker push $TAG_COMMIT
     - docker push $TAG_LATEST
     - docker build -f Dockerfile .
 
