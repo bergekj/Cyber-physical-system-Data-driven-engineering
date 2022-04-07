@@ -15,9 +15,25 @@
     and if necessary we will have campus meeting
     We will have weekly scrum meetings mandatory for all team members
     Flexible and codealong sessions will be held throughout sprints.
-    For onsite communication our team plans to hold one the sprint retrospectives in person this will allow the us to reflect back on our progress help us identify areas of improvements. we plan to sync the sprint retrospective right after a TA meeting. As TA is defined as a stakeholder we plan to take feedback on our delivery and decide if we have achieved DoD.
+    For onsite communication our team plans to hold one the sprint 
+    retrospectives in person this will allow the us to reflect back on our 
+    progress help us identify areas of improvements. we plan to sync the 
+    sprint retrospective right after a TA meeting. As TA is defined as a 
+    stakeholder we plan to take feedback on our delivery and decide if we 
+    have achieved DoD.
     
     
 5. How will we solve conflicts?
-    A we are are group of 5 and we will all be developing locally working on separate items related to the project therefore code pushes to main may hamper the version of eachothers code and pulling new code while pushing without creating backups may cause code to be lost making the process inefficient. To prevent such occurances we want to have a version control We will create branches for different parts of the development, and remind the team in time after the code is merged to ensure that everyone updates the local code in time.
-    For inevitable conflicts in our team program, when conflict has arisen. The team members will communicate and discuss how to solve the problem, we will find the most suitable solution for us, otherwise, we will seek assistance from the TA.
+
+    A we are are group of 5 and we will all be developing locally working 
+    on separate items related to the project therefore code pushes to main 
+    may hamper the version of eachothers code and pulling new code while 
+    pushing without creating backups may cause code to be lost making the 
+    process inefficient. To prevent such occurances we want to have a 
+    version control We will create branches for different parts of the 
+    development, and remind the team in time after the code is merged to 
+    ensure that everyone updates the local code in time.
+    For inevitable conflicts in our team program, when conflict has arisen. 
+    The team members will communicate and discuss how to solve the problem, 
+    we will find the most suitable solution for us, otherwise, we will seek 
+    assistance from the TA.
