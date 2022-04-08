@@ -57,8 +57,9 @@ Within a particular ecosystem, there may be a common way of installing things, s
 
 Use the built-in continuous integration in GitLab.
 
-we have one build stage for making the test and build the image
-we have one deploy stage for making release our docker image 
+we have one build stage for making the test and build the image.
+we have one deploy stage for making release our docker image.
+(if you want to release you should do it with tage)
 
 ***
 ## Features
