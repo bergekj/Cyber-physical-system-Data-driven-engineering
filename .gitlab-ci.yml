@@ -42,11 +42,11 @@ build-and-test:
     - docker-build
   stage: build
   script:
-    - docker build -t name:latest -f Dockerfile .
-    - mkdir cid
-    - docker create --cidfile "cid/container_id.cid" name:latest
-    - docker cp `cat cid/container_id.cid`:usr/bin/code_coverage.pdf .
-    - docker rm `cat cid/container_id.cid`
+    - docker build -t group-14:latest -f Dockerfile .
+    #- mkdir cid
+    #- docker create --cidfile "cid/container_id.cid" name:latest
+    #- docker cp `cat cid/container_id.cid`:usr/bin/code_coverage.pdf .
+    #- docker rm `cat cid/container_id.cid`
   artifacts:
     when: always  
 
