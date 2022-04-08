@@ -30,21 +30,36 @@ stages:
 
 # Display information before we start the build.
 before_script:
+  - docker image prune -f
   - docker info
   - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
 
 # This section describes what shall be done to build and test the project.
 build-and-test:
+  only:
+   - branches
   tags:
     - docker-build
   stage: build
   script:
-    - docker build --pull -t "$CI_REGISTRY_IMAGE":"$CI_COMMIT_TAG" .
-    - docker push "$CI_REGISTRY_IMAGE":"$CI_COMMIT_TAG" 
-    - docker build -f Dockerfile .
+    - docker build -t name:latest -f Dockerfile .
+    - mkdir cid
+    - docker create --cidfile "cid/container_id.cid" name:latest
+    - docker cp `cat cid/container_id.cid`:usr/bin/code_coverage.pdf .
+    - docker rm `cat cid/container_id.cid`
+  artifacts:
+    when: always
+    paths:
+      - code_coverage.pdf
+      ezpire_in: 10 days  
 
 # This section describes what shall be done to deploy artefacts from the project.
 release:
+  only:
+    refs:
+      - tags
+    variables:
+      - $CI_COMMIT_TAG =~ /^v\d+.\d+.\d+$/  
   tags:
     - docker-build
   stage: deploy
@@ -52,6 +67,3 @@ release:
     - docker build -f Dockerfile -t "$CI_REGISTRY_IMAGE":"$CI_COMMIT_TAG" .
     - docker push "$CI_REGISTRY_IMAGE":"$CI_COMMIT_TAG"
     - docker build -f Dockerfile .
-
-- # ....
-- exit 1
