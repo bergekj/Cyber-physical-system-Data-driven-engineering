@@ -44,8 +44,9 @@ build-and-test:
   script:
     - cd /helloworld
     - docker build -t group-14:latest -f Dockerfile .
-    #- mkdir cid
-    #- docker create --cidfile "cid/container_id.cid" name:latest
+    - mkdir cid
+    - docker create --cidfile "cid/container_id.cid" name:latest
+    - docker build --build-arg HTTP_PROXY=https://git.chalmers.se/courses/dit638/students/2022-group-14
     #- docker cp `cat cid/container_id.cid`:usr/bin/code_coverage.pdf .
     #- docker rm `cat cid/container_id.cid`
   artifacts:
