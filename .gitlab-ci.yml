@@ -51,7 +51,7 @@ build-and-test:
     when: always
     paths:
       - code_coverage.pdf
-      ezpire_in: 10 days  
+      expire_in: 10 days  
 
 # This section describes what shall be done to deploy artefacts from the project.
 release:
