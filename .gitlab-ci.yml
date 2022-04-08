@@ -48,10 +48,7 @@ build-and-test:
     - docker cp `cat cid/container_id.cid`:usr/bin/code_coverage.pdf .
     - docker rm `cat cid/container_id.cid`
   artifacts:
-    when: always
-    paths:
-      - code_coverage.pdf
-      expire_in: 10 days  
+    when: always  
 
 # This section describes what shall be done to deploy artefacts from the project.
 release:
