@@ -42,6 +42,7 @@ build-and-test:
     - docker-build
   stage: build
   script:
+    - cd /helloworld
     - docker build -t group-14:latest -f Dockerfile .
     #- mkdir cid
     #- docker create --cidfile "cid/container_id.cid" name:latest
