@@ -33,6 +33,7 @@ before_script:
   - docker image prune -f
   - docker info
   - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+  - cd helloworld
 
 # This section describes what shall be done to build and test the project.
 build-and-test:
@@ -42,7 +43,6 @@ build-and-test:
     - docker-build
   stage: build
   script:
-    - cd helloworld
     - docker build -t group-14:latest -f Dockerfile .
     #- mkdir cid
     #- docker create --cidfile "cid/container_id.cid" name:latest
