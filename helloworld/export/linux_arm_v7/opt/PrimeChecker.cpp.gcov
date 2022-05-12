@@ -1,0 +1,21 @@
+        -:    0:Source:/opt/sources/PrimeChecker.cpp
+        -:    0:Graph:PrimeChecker.cpp.gcno
+        -:    0:Data:PrimeChecker.cpp.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include "PrimeChecker.hpp"
+        -:    2:
+        1:    3:bool PrimeChecker::isPrime(uint16_t n) {
+        1:    4:    bool retVal{true};
+        1:    5:    if (n<2 || 0 == n%2) {
+        -:    6:        retVal = false;
+        -:    7:    }
+        -:    8:    else {
+        1:    9:        for(uint16_t i{3}; (i*i) <= n; i += 2) {
+    #####:   10:            if (0 == n%i) {
+        -:   11:                return false;
+        -:   12:            }
+        -:   13:        }
+        -:   14:    }
+        -:   15:    return retVal;
+        -:   16:}
